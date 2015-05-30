@@ -1,0 +1,237 @@
+@charset "utf-8";
+/* Medios fluidos sencillos
+   Nota: Los medios fluidos exigen la eliminación de los atributos de altura y anchura de los medios del código HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 no admite max-width (anchura máxima), por lo que usa de manera predeterminada una anchura del 100% */
+.ie6 img {
+	width:100%;
+}
+
+
+/* Diseño móvil: 480 px e inferior. */
+
+.gridIndex {
+	margin-left: auto;
+	margin-right: auto;
+	width: 87.36%;
+	padding-left: 1.82%;
+	padding-right: 1.82%;
+}
+#nav
+{
+ background-color: #441313;
+ width:100%;
+ height:50px;
+ position: fixed;
+ box-shadow: 0px 1px 50px #5E5E5E;
+ color:  rgba(255,255,255,0.9);
+ font-family:Georgia, "Times New Roman", Times, serif;
+ top:0px;
+z-index:999;
+}
+#logo
+{
+  width: 300px;
+  text-decoration:none;
+  padding: 12px;
+  color:  rgba(255,255,255,0.9);
+  float: left;
+
+}
+.gridIndex div
+{
+	display: block;
+}
+
+
+#num2 {
+	width: 100%;
+	border-left: 1px solid rgba(0,0,0,0.1);
+	border-right: 1px solid rgba(0,0,0,0.1);	
+}
+
+
+#footer
+{
+	 width: 100%;
+	 height: 50px;
+	 background-color: #441313;
+	 left: 0;
+	 bottom: 0;
+}
+
+/* Diseño tableta: de 481 px a 768 px. Hereda estilos de: Diseño móvil. */
+
+@media only screen and (min-width: 481px) {
+.gridIndex {
+	width: 90.675%;
+	padding-left: 1.1625%;
+	padding-right: 1.1625%;
+        background-color:  #f1f1f1;
+}
+
+.gridContainer div
+{
+	display: block;
+}
+
+
+#num2 {
+	width: 100%;
+
+}
+
+#footer
+{
+	 width: 100%;
+	 height: 50px;
+	 background-color:#441313;
+	 left: 0;
+	 bottom: 0;
+}
+}
+
+/* Diseño escritorio: de 769 px hasta un máximo de 1232 px.  Hereda estilos de: Diseño móvil y Diseño tableta. */
+
+@media only screen and (min-width: 769px) {
+.gridIndex {
+	width: 100%;
+	max-width: 98%;
+	padding-left: 0.9%;
+	padding-right: 0.9%;
+	margin: auto;
+        background-color:  #f1f1f1;
+
+}
+
+.fix
+{
+   position: absolute;
+}
+.gridIndex div
+{
+	display: inline-block;
+}
+
+#num1 {
+	width: 28%;
+	height: 100%;
+	float: right;
+
+}
+#num2 {
+	width: 43.2%;
+        margin-left: 5%;
+	border-left: 1px solid rgba(0,0,0,0.1);
+	border-right: 1px solid rgba(0,0,0,0.1);
+	margin-top: 5%;
+	overflow: hidden;
+}
+#numF
+{
+	width: 71%;
+	height: 1200px;
+	border-left: 1px solid rgba(0,0,0,0.1);
+	border-right: 1px solid rgba(0,0,0,0.1);
+	overflow: scroll;
+	margin-top: 5%;
+}
+
+     #numF::-webkit-scrollbar-thumb{
+      background-color:#A4C639;
+      border-radius:10px;
+      }
+      #numF::-webkit-scrollbar-thumb:hover{
+      background-color:#A4C639;
+      border:1px solid #333333;
+      }
+     #numF::-webkit-scrollbar-thumb:active{
+      background-color:#A4C639;
+      border:1px solid #333333;
+      } 
+.tutContent
+{
+	width: 100%;
+	height: 50px;
+	float: left;
+	border: 1px solid white;
+	background-color: #441313;
+	color: white;
+	text-align: left;
+
+}
+.tutContent:hover
+{
+	width: 100%;
+	height: 50px;
+	float: left;
+	border: 1px solid white;
+	background-color: #f1f1f1;
+	color: black;
+	text-align: left;
+
+}
+#tutorial
+{
+	width: 300px;
+	height: 400px;
+
+}
+#num3 {
+	width: 10%;
+	float: left;
+	height: 100%;
+	margin-top: 5%;
+
+	
+}
+#numT
+{
+	width: 20%;
+	float: left;
+	height: 100%;
+	margin-top: 5%;
+}
+.circle
+{
+  position: relative;
+}
+.circle div
+{ 
+    display: block;
+    margin-bottom: 2%;
+}
+.perks
+{
+   width: 60px;
+  height: 35px;
+   border-radius: 100%;
+   color:white;
+  padding-top: 25px;
+   background-color: #441313;
+  text-align: center;
+}
+.perks:hover
+{
+    width: 60px;
+  height: 35px;
+   border-radius: 100%;
+   color:white;
+  padding-top: 25px;
+   background-color: rgba(1,0,0,0.2);
+  text-align: center;
+}
+
+#footer
+{
+	 width: 100%;
+	 height: 50px;
+	 background-color: #441313;
+	 left: 0;
+	 bottom: 0;
+}
+}
